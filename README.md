@@ -33,5 +33,17 @@ scoreboard notes published on Substack carried the run checksums on their
 publication dates (e.g. run #9's checksum in the 2026-08-20 note), and the
 internal run log's `recorded_at` column is in the CSV. Weigh accordingly.
 
+## What a Git timestamp does and doesn't prove
+
+Commit *author* and *committer* dates are set by the committer's machine, so
+a commit date alone is not third-party evidence. What GitHub does attest is
+the *order* of pushes and the fact that a given tree existed on its servers
+when it was pushed (visible in the repository's event/push history, which the
+committer cannot backdate). To make "outside my control" hold for a sharp
+reader, the plan is signed commits plus OpenTimestamps anchoring of each
+run's CSV hashes to the Bitcoin blockchain (`.ots` proofs committed alongside);
+until those are in place, treat the commit dates here as author-asserted and
+the push history as the weaker external witness.
+
 If a row is ever edited rather than appended, the commit history will show it.
 That's the point.
