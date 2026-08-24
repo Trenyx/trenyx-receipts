@@ -20,5 +20,18 @@ their own price feed can reconstruct the path from the decisions above.
 written — not that it was right. What this repo adds is the *when*: a commit
 here is a timestamp Trenyx doesn't control.
 
+## Where this history starts (read this before trusting the timestamps)
+
+This repository was created on **2026-08-24**. Its first commit is a snapshot
+of runs #1–#10 exported in one go — so for those ten runs, GitHub's timestamp
+proves only that the data existed by 2026-08-24, not the week-by-week
+chronology. From **run #11 onward**, every run lands as its own commit within
+minutes of being recorded, and the commit history is the witness.
+
+For runs #1–#10 the external evidence is weaker but not absent: the weekly
+scoreboard notes published on Substack carried the run checksums on their
+publication dates (e.g. run #9's checksum in the 2026-08-20 note), and the
+internal run log's `recorded_at` column is in the CSV. Weigh accordingly.
+
 If a row is ever edited rather than appended, the commit history will show it.
 That's the point.
